@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,700;0,800;0,900;1,600;1,800;1,900&family=PT+Mono&family=Poppins:wght@300;400;500;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --white: #ffffff;
+  --light-grey: #f0f0f0;
+  --black: #000000;
+  --turquoise: #64ffda;
+  --blue: #17aab5;
+  --dark-navy: #0a192f;
+  --medium-navy: #112240;
+  --light-navy: #233554;
+  --dark-lilac: #8892b0;
+  --medium-lilac: #a8b2d1;
+  --light-lilac: #ccd6f6;
+  --pink: #ff54b3;
+  --green: #37ff8b;
+  --neon: hsl(317 100% 54%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: var(--white);
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  /* margin: 0 30px; */
+}
+
+h1 {
+  font-family: "Montserrat";
+}
+
+h2 {
+  font-family: "Chivo Mono";
+  font-size: 60px;
+  font-weight: 600px;
+  color: var(--white);
+  margin: 0;
+}
+
+/* ---------- hero section ------------ */
+/* header */
+#hero-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/portfolioheroimage.png);
+  background-size: cover;
+  background-position: center;
+  margin-left: 40px;
+}
+
+/*container */
+.nav-container {
+  padding: 15px 0;
+  margin: 0 15px;
+}
+
+/* ---------- nav bar ------------ */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 60px;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1em;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--pink);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* --------- hero-elements --------- */
+/* header text */
+.hero-text {
+  margin-top: 20%;
+  font-size: 1.6em;
+}
+
+.hero-text h1 {
+  font-size: 3.3em;
+  margin-top: 20px;
+}
+
+.name {
+  font-size: 1em;
+  margin-top: 20px;
+  color: var(--pink);
+}
+
+.dot {
+  font-size: 1em;
+  margin-top: 20px;
+  color: var(--white);
+}
+
+.typing {
+  /* color: var(--pink); */
+  overflow: hidden;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  float: left;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+blink {
+  animation: blink 1s infinite;
+  color: var(--blue);
+  font-size: 5.3em;
+}
+
+.hero-small-text {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+/* Hero Buttons */
+.hero-button {
+  font-size: 1.8em;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+  border: currentColor var(--neon) 0.125em solid;
+  padding: 0.23em 1em;
+  border-radius: 0.35em;
+  /* margin: 0 5px; */
+  /* background-color: #f0f0f0; */
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.5em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 var(--neon), 0 0 0.5em 0 var(--neon);
+
+  position: relative;
+
+  transition: background-color 100ms linear;
+}
+
+.hero-button.button-contact {
+  margin-left: 20px;
+}
+
+.hero-button::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: var(--neon);
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(1.5em);
+  opacity: 0.7;
+}
+
+.hero-button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--pink);
+  box-shadow: 0 0 2em 0.5em var(--neon);
+  opacity: 0;
+  background-color: var(--neon);
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--neon);
+  color: var(--white);
+  text-shadow: none;
+}
+
+.hero-button:hover::before {
+  opacity: 1;
+}
+
+.hero-button:hover::after,
+.hero-button:focus::after {
+  opacity: 1;
+}
+
+/* <!---------- About Section ------------> */
+#about {
+  padding: 40px;
+  margin: 40px;
+  color: var(--white);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+
+/* tabs */
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: var(--pink);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents ul {
+  padding-left: 0;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-contents ul li span {
+  color: var(--blue);
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/* My Journey tab */
+/* Timeline */
+.timeline-container {
+  /* min-height: 100vh; */
+  /* min-height: 350px; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 20px;
+  background-color: #111;
+  overflow-y: scroll;
+  max-height: 350px;
+  background-color: var(--light-navy);
+  /* border-radius: 15px; */
+  /* border-radius: 20px 20px 20px 0px; */
+  border-radius: 30px 120px 30px 120px;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 2900px;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: var(--light-grey);
+  color: var(--white);
+  /* border-radius: 10px; */
+  border-radius: 20px 20px 20px 0px;
+  margin-bottom: 20px;
+}
+
+.timeline ul li:first-child {
+  margin-top: 20px;
+}
+
+.timeline ul li:last-child {
+  margin-bottom: 20px;
+}
+
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: var(--blue);
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+  color: var(--medium-navy);
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: var(--pink);
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--dark-lilac);
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
