@@ -4,162 +4,519 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karen Lopez</title>
+    <script src="./app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ff859d6ad5.js"
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+    <title>Karen Lopez</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="images/favicon.ico.png" />
   </head>
   <body>
-    <div id="hero-container">
-      <div class="nav-container">
-        <nav>
-          <a href="index.html">
-            <img src="images/logo.png" class="logo" alt="logo" />
-          </a>
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        </div>
+    <!--------- nav---------- -->
+    <div class="nav-container">
+      <nav>
+        <a href="index.html">
+          <img src="images/logo.png" class="logo" alt="logo" />
+        </a>
+        <ul>
+          <li><a href="about.html">.about()</a></li>
+          <li><a href="projects.html">.projects()</a></li>
+          <li><a href="contact.html">.contact()</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--------- Hero section --------->
+    <div id="section-container">
+      <div class="hero-flex-wrapper">
+        <!-- hero-text-box -->
         <div class="hero-text">
           <h1 class="typing">
-            Hi, I'm <span class="name">Karen</span>.<span class="dot"></span
-            ><span class="cursor"><blink>|</blink></span>
+            <span class="name">karen</span>.<span class="dot"></span>is( )<span
+              class="cursor"
+              ><blink>|</blink></span
+            >
           </h1>
           <br /><br /><br /><br />
-          <p class="hero-small-text">Fullstack Software Developer based in Perth WA</p>
+          <p class="hero-small-text name">Karen Lopez</p>
+          <p class="hero-small-text title">Fullstack Software Developer</p>
+
+          <!-- hero-buttons -->
+          <div class="hero-button-wrapper">
+            <a href="projects.html" class="hero-button button-projects"
+              >View my projects</a
+            >
+            <a href="contact.html" class="hero-button button-contact"
+              >Get in touch</a
+            >
+          </div>
         </div>
-        <a href="projects.html" class="hero-button button-projects">Check out my projects</a>
-        <a href="contact.html" class="hero-button button-contact">Get in touch</a>
+
+        <!-- avatar -->
+        <img src="images/avatar.png" id="avatar" alt="karen avatar" />
       </div>
     </div>
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!---------- Tech Stack Section------------>
+    <div id="tech-stack">
+      <div class="section-container">
+        <h2>.techStack()</h2>
+
+        <div class="tech-stack-container">
+          <i class="fa-brands fa-html5 favicon"></i>
+          <i class="fa-brands fa-css3-alt favicon"></i>
+          <i class="fa-brands fa-square-js favicon"></i>
+          <i class="fa-brands fa-python favicon"></i>
+          <i class="fa-brands fa-react favicon"></i>
+          <i class="fa-solid fa-d favicon"></i>
+          <i class="fa-brands fa-docker favicon"></i>
+          <i class="fa-solid fa-r favicon"></i>
+          <i class="fa-solid fa-database favicon"></i>
+        </div>
+      </div>
     </div>
-</div>
-<!---------- About Section ------------>
+
+    <!---------- About Section ------------>
     <div id="about">
       <div class="section-container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/karen2.png" alt="Karen"/>
+            <img src="images/karen2.png" alt="Karen" />
           </div>
           <div class="about-col-2">
-            <h2>About Me</h2>
-            <p>Hello and welcome to my corner of the web!<br />I had my first fateful encounter with code two years ago as a freelance Course Strategist helping clients monetize their knowledge online. I love acquiring and applying knowledge, particularly when I can use it to solve problems and improve processes, so after learning HTML and CSS, it didn't take me long to realize that the world of Tech could deliver me a never ending supply of this!<br />Having now completed She Codes Plus, an incredible initiative aiming to address the gender imbalance in the industry, whilst completing concurrent studies in data analytics, I'm eager to build innovative solutions and solve complex programming problems as a software developer.</p>
+            <h2>.about()</h2>
+            <p>
+              Hello and welcome to my corner of the web!<br />Please click the
+              tabs below to get to know me a little better!
+            </p>
             <div class="tab-titles">
-                <p class="tab-links active-link">My Journey</p>
-                <p class="tab-links">Skills</p>
-                <p class="tab-links">Fun facts</p>
+              <p class="tab-links active-link" onclick="opentab('summary')">
+                In a nutshell
+              </p>
+              <p class="tab-links" onclick="opentab('journey')">My Journey</p>
+              <p class="tab-links" onclick="opentab('skills')">Other skills</p>
+              <p class="tab-links" onclick="opentab('facts')">Fun facts</p>
+            </div>
+
+            <!------ In a nutshell tab ------->
+            <div class="tab-contents active-tab" id="summary">
+              <p>
+                I had my first fateful encounter with code two years ago as a
+                freelance Course Strategist helping clients monetize their
+                knowledge online. I love acquiring and applying knowledge,
+                particularly when I can use it to solve problems and improve
+                processes, so after learning HTML and CSS, it didn't take me
+                long to realize that the world of Tech could deliver me a never
+                ending supply of this!<br /><br />Having now completed She Codes
+                Plus, an incredible initiative aiming to address the gender
+                imbalance in the industry, whilst completing concurrent studies
+                in data analytics, I'm eager to build innovative solutions and
+                solve complex programming problems as a software developer.
+              </p>
             </div>
 
             <!------ My Journey Timeline tab ------->
-            <div class="tab-contents active-tab">
-                <p>I've previously worked in a variety of industries, including the Education and Healthcare sector, and bring with me a unique set of transferable skills. When it comes to professional development, I view all hard skills as learnable through consistent practice and focused effort. Keeping this personal philosophy at the forefront of every new professional experience and learning challenge, is what has lead me to where I am today.</p>
-                <div class="timeline-container">
-                    <div class="timeline">
-                      <ul>
-                        <li>
-                          <div class="timeline-content">
-                            <h3 class="date">Dec 2012</h3>
-                            <h1>Undergraduate studies</h1>
-                            <p>I've always been curious, so chose to study a Bachelor of Science (Human Biology and Applied Analytical Chemistry), graduating in 2012.</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="timeline-content">
-                            <h3 class="date">Dec 2013</h3>
-                            <h1>Research and sessional academic teaching</h1>
-                            <p>I particularly enjoyed organic chemistry, and completed my honors research project in geochemistry, teaching undergraduate organic chemistry labs and tutorials while doing so.</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="timeline-content">
-                            <h3 class="date">June 2015</h3>
-                            <h1>Postgraduate qualifications</h1>
-                            <p>My enjoyable teaching experience at Curtin University lead me to pursue a Postgraduate Diploma in Education (Science).</p>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="timeline-content">
-                            <h3 class="date">July 2015</h3>
-                            <h1>Science teaching</h1>
-                            <p>I began my career as a science educator with the WA Department of Education.</p>
-                          </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Feb 2021</h3>
-                              <h1>Teaching and launching my own business</h1>
-                              <p>While teaching fulltime, I used the skills that made me an effective educator, to start my online business as a course strategist where I successfully managed and launched multiple courses. </p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="timeline-content">
-                              <h3 class="date">March 2021</h3>
-                              <h1>My first code snippets</h1>
-                              <p>A strong customer-focused approach and desire to exceed expectations saw me regularly lean into challenges that required learning new skills. One of these skills was coding, where I started teaching myself HTML and CSS.</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Feb 2022</h3>
-                              <h1>Skills focused</h1>
-                              <p>Officially on leave from my fulltime teaching position, I decided to focus on my business and develop my new skills, particularly my front-end development skills. I began teaching myself JavaScript.</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="timeline-content">
-                              <h3 class="date">May 2022</h3>
-                              <h1>SheCodes.io</h1>
-                              <p>I enrolled in an online course where I strengthened my front-end development skills.</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Sep 2022</h3>
-                              <h1>She Codes AUS</h1>
-                              <p>I gained a place in She Codes Plus, a competitive, well regarded, project-based program where I produced five unique projects over six months.<a href="projects.html">View my projects here.</a></p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Dec 2022</h3>
-                              <h1>Data Analytics Certification</h1>
-                              <p>With data being a key driver in my professional decision-making in my latest roles, not to mention its strong relevance to back-end development, I began formally studying data analytics. I have learnt R and SQL and visualisation tools such as Power BI and Tableau.</p>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="timeline-content">
-                              <h3 class="date">Apr 2023</h3>
-                              <h1>Completion of She Codes Plus</h1>
-                              <p>Having now completed the She Codes Plus program, I would like to further develop my skills in a fullstack software development role.</p>
-                            </div>
-                          </li>
-                      </ul>
-                    </div>
-                  </div>
+            <div class="tab-contents" id="journey">
+              <div class="timeline-container">
+                <div class="timeline">
+                  <ul>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">Dec 2012</h3>
+                        <h1>Undergraduate studies</h1>
+                        <p>
+                          I've always been curious, so chose to study a Bachelor
+                          of Science (Human Biology and Applied Analytical
+                          Chemistry), graduating in 2012.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">Dec 2013</h3>
+                        <h1>Research and sessional academic teaching</h1>
+                        <p>
+                          I particularly enjoyed organic chemistry, and
+                          completed my honors research project in geochemistry,
+                          teaching undergraduate organic chemistry labs and
+                          tutorials while doing so.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">June 2015</h3>
+                        <h1>Postgraduate qualifications</h1>
+                        <p>
+                          My enjoyable teaching experience at Curtin University
+                          lead me to pursue a Postgraduate Diploma in Education
+                          (Science).
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">July 2015</h3>
+                        <h1>Science teaching</h1>
+                        <p>
+                          I began my career as a science educator with the WA
+                          Department of Education.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">Feb 2021</h3>
+                        <h1>Teaching and launching my own business</h1>
+                        <p>
+                          While teaching fulltime, I used the skills that made
+                          me an effective educator, to start my online business
+                          as a course strategist where I successfully managed
+                          and launched multiple courses.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">March 2021</h3>
+                        <h1>My first code snippets</h1>
+                        <p>
+                          A strong customer-focused approach and desire to
+                          exceed expectations saw me regularly lean into
+                          challenges that required learning new skills. One of
+                          these skills was coding, where I started teaching
+                          myself HTML and CSS.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">Feb 2022</h3>
+                        <h1>Skills focused</h1>
+                        <p>
+                          Officially on leave from my fulltime teaching
+                          position, I decided to focus on my business and
+                          develop my new skills, particularly my front-end
+                          development skills. I began teaching myself
+                          JavaScript.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">May 2022</h3>
+                        <h1>SheCodes.io</h1>
+                        <p>
+                          I enrolled in an online course where I strengthened my
+                          front-end development skills.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">Sep 2022</h3>
+                        <h1>She Codes AUS</h1>
+                        <p>
+                          I gained a place in She Codes Plus, a competitive,
+                          well regarded, project-based program where I produced
+                          five unique projects over six months.<a
+                            href="projects.html"
+                            >View my projects here.</a
+                          >
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">Dec 2022</h3>
+                        <h1>Data Analytics Certification</h1>
+                        <p>
+                          With data being a key driver in my professional
+                          decision-making in my latest roles, not to mention its
+                          strong relevance to back-end development, I began
+                          formally studying data analytics. I have learnt R and
+                          SQL and visualisation tools such as Power BI and
+                          Tableau.
+                        </p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-content">
+                        <h3 class="date">Apr 2023</h3>
+                        <h1>Completion of She Codes Plus</h1>
+                        <p>
+                          Having now completed the She Codes Plus program, I
+                          would like to further develop my skills in a fullstack
+                          software development role.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <!------ My skills Tab ------->
-            <div class="tab-contents">
-                <ul>
-                    <li><span>UI/UX</span><br>Designing web//app interfaces</li>
-                    <li><span>Web Development</span><br>Web Development</li>
-                    <li><span>App Development</span><br>Building Android/iOS apps</li>
-                </ul>
+            <!---- My skills Tab ------->
+            <div class="tab-contents" id="skills">
+              <p>
+                When it comes to professional development, I view all hard
+                skills as learnable through consistent practice and focused
+                effort. Keeping this personal philosophy at the forefront of
+                every new professional experience and learning challenge, is
+                what has lead me to where I am today.
+              </p>
+              <br />
+              <p>
+                I've previously worked in a variety of industries, including the
+                Education and Healthcare sector, and bring with me a unique set
+                of transferable skills.
+              </p>
+              <ul>
+                <li>
+                  <span>Project management</span><br />Leadership and mentorship
+                </li>
+                <li>
+                  <span>Communications and marketing</span><br />Data-driven
+                  decision making
+                </li>
+                <li>
+                  <span>Copywriting</span><br />Document translation
+                  (Portuguese, Spanish --> English)
+                </li>
+              </ul>
+              <br />
+              <br />
+              <p><strong>Download my CV for more details</strong></p>
             </div>
 
             <!------ Fun facts ------->
-            <div class="tab-contents">
-                <ul>
-                    <li><span>UI/UX</span><br>Designing web//app interfaces</li>
-                    <li><span>Web Development</span><br>Web Development</li>
-                    <li><span>App Development</span><br>Building Android/iOS apps</li>
-                </ul>
+            <div class="tab-contents" id="facts">
+              <ul>
+                <li>
+                  <span></span><br />I would like to clarify first and foremost,
+                  that I'm a 'good Karen', I promise 😇
+                </li>
+                <li>
+                  <span>🧩 Kicking back with a good puzzle or board game</span
+                  ><br />Coffee ☕
+                </li>
+                <li>
+                  <span>Lifting heavy things 🏋️‍♀️</span><br />
+                  🥔 Carbs... Who am I kidding, just food in general
+                </li>
+              </ul>
             </div>
-            </div>
-        </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!---------- My Projects Section------------>
+    <div id="portfolio">
+      <div class="section-container">
+        <h2>.myProjects()</h2>
+        <!-- </div> -->
+        <div class="projects-container">
+          <div class="project">
+            <img src="images/project-card-1.png" alt="buybuddy-app" />
+            <div class="layer">
+              <div class="project-card-text">
+                <h3>Buybuddy</h3>
+                <p>
+                  The comparison shopping list app for the indecisive, yet
+                  financially savvy consumer.
+                </p>
+              </div>
+              <a
+                href="https://buy-buddy.netlify.app/"
+                target="_blank"
+                title="buybuddy app"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/project-card-2.png" />
+            <div class="layer">
+              <div class="project-card-text">
+                <h3>She Codes News Xmas Ed.</h3>
+                <p>
+                  The most mouthwatering edition of She Codes News there ever
+                  was! Prepare to salivate!
+                </p>
+              </div>
+              <a
+                href="http://127.0.0.1:8000/news/"
+                target="_blank"
+                title="She Codes News"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/buybuddy.png" />
+            <div class="layer">
+              <div class="project-card-text">
+                <h3>EducAid</h3>
+                <p>
+                  A non-for-profit crowdfunding platform aimed at making quality
+                  courses/learning more accessible to those in need.
+                </p>
+              </div>
+              <a
+                href="https://educaid.netlify.app/"
+                target="_blank"
+                title="EducAid"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="projects.html" class="button-link">SEE MORE</a>
+    </div>
+
+    <!------------------- Contact Section------------------------>
+    <div id="contact">
+      <div class="section-container">
+        <div class="row">
+          <div class="contact-left">
+            <h2>.contact()</h2>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>k.alicia.lopez@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+61 421 648 140</p>
+            <a
+              href="images/karenlopezcv.pdf"
+              download
+              class="button-link button-2"
+              >Download CV</a
+            >
+            <!-- </div> -->
+          </div>
+          <div class="contact-right">
+            <!-- My contact form -->
+            <!-- <form action="https://formspree.io/f/xdojdvro" method="post">
+            <div class="form-item">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="form-item">
+              <label for="mail">Email</label>
+              <input type="email" id="mail" name="email" />
+            </div>
+            <div class="form-item">
+              <label for="message">Message</label>
+              <textarea id="message" name="message">
+        Hi Karen!
+                  </textarea
+              >
+            </div>
+            <div class="form-item">
+              <button class="contact-send" type="submit">Send!</button>
+            </div>
+          </form> -->
+            <!-- </div> -->
+            <!-- </div> -->
+
+            <!-- Nirali's Fucking Awesome Contact Form -->
+            <div class="form-wrapper">
+              <form action="https://formspree.io/f/xdojdvro" method="POST">
+                <div class="form-item">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required="required" />
+                  <label for="name"><span>Name</span></label>
+                </div>
+                <div class="form-item">
+                  <input
+                    type="email"
+                    id="mail"
+                    name="mail"
+                    required="required" />
+                  <label for="mail"><span>Email</span></label>
+                </div>
+                <div class="form-item">
+                  <textarea
+                    id="message"
+                    name="message"
+                    required="required"></textarea>
+                  <label for="message"
+                    ><span>Hey Karen, I love your website!</span></label
+                  >
+                </div>
+                <div class="form-item">
+                  <button type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+
+            <!-- side contact bar -->
+            <div orientation="left" class="contact-side-bar">
+              <ul class="contact-icon-list">
+                <li>
+                  <a
+                    href="https://github.com/kalicialopez"
+                    title="Github"
+                    target="_blank">
+                    <i class="fab fa-github mb-3"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://stackoverflow.com/users/19818141/kalopez"
+                    title="Stackoverflow"
+                    target="_blank"
+                    rel="noreferrer">
+                    <i class="fa-brands fa-stack-overflow"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/kalicialopez/"
+                    title="Instagram"
+                    target="_blank"
+                    rel="noreferrer">
+                    <i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/kalicialopez/"
+                    title="Linkedin"
+                    target="_blank"
+                    rel="noreferrer">
+                    <i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- side bar email -->
+      <!-- <div
+      orientation="right"
+      class="side-bar-email">
+      <a href="mailto:k.alicia.lopez@gmail.com" aria-label="Email"
+        ><i class="fa-solid fa-paper-plane"></i>k.alicia.lopez@gmail.com</a
+      > -->
+    </div>
+    <div id="footer">
+      <p>
+        Copyright <i class="fa-solid fa-copyright"></i> Karen Lopez 2023 <br />
+        Made with <i class="fa-solid fa-heart"></i>, Coffee and
+        <i class="fa-solid fa-cookie-bite"></i>.
+      </p>
+    </div>
   </body>
 </html>
-
