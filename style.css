@@ -677,7 +677,7 @@ blink {
   overflow: hidden;
 }
 
-.project img {
+.project-img {
   width: 100%;
   border-radius: 10px;
   display: block;
