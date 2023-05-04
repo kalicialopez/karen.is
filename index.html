@@ -70,15 +70,55 @@
         <h2>.techStack()</h2>
 
         <div class="tech-stack-container">
-          <i class="fa-brands fa-html5 favicon"></i>
-          <i class="fa-brands fa-css3-alt favicon"></i>
-          <i class="fa-brands fa-square-js favicon"></i>
-          <i class="fa-brands fa-python favicon"></i>
-          <i class="fa-brands fa-react favicon"></i>
-          <i class="fa-solid fa-d favicon"></i>
-          <i class="fa-brands fa-docker favicon"></i>
-          <i class="fa-solid fa-r favicon"></i>
-          <i class="fa-solid fa-database favicon"></i>
+          <div class="icon html5">
+            <div class="tooltip">HTML5</div>
+            <span><i class="fa-brands fa-html5 favicon"></i></span>
+          </div>
+
+          <div class="icon css3">
+            <div class="tooltip">CSS3</div>
+            <span><i class="fa-brands fa-css3-alt favicon"></i></span>
+          </div>
+
+          <div class="icon javascript">
+            <div class="tooltip">JavaScript</div>
+            <span><i class="fa-brands fa-square-js favicon"></i></span>
+          </div>
+
+          <div class="icon python">
+            <div class="tooltip">Python</div>
+            <span><i class="fa-brands fa-python favicon"></i></span>
+          </div>
+
+          <div class="icon react">
+            <div class="tooltip">React</div>
+            <span><i class="fa-brands fa-react favicon"></i></span>
+          </div>
+
+          <!-- <div class="icon django">
+            <div class="tooltip">Django</div>
+            <span><i class="fa-solid fa-d favicon"></i></span>
+          </div> -->
+
+          <div class="icon django">
+            <div class="tooltip">Django</div>
+            <span class="icon-django favicon"></span>
+          </div>
+
+          <div class="icon docker">
+            <div class="tooltip">Docker</div>
+            <span><i class="fa-brands fa-docker favicon"></i></span>
+          </div>
+
+          <div class="icon r">
+            <div class="tooltip">R</div>
+            <span><i class="fa-solid fa-r favicon"></i></span>
+          </div>
+
+          <div class="icon sql">
+            <div class="tooltip">SQL</div>
+            <span><i class="fa-solid fa-database favicon"></i></span>
+          </div>
         </div>
       </div>
     </div>
@@ -92,17 +132,27 @@
           </div>
           <div class="about-col-2">
             <h2>.about()</h2>
+            <br />
             <p>
               Hello and welcome to my corner of the web!<br />Please click the
-              tabs below to get to know me a little better!
+              tabs below to get to know me a little better.
             </p>
+            Download my
+            <a
+              href="images/karenlopezcv.pdf"
+              title="Karen's CV"
+              target="_blank"
+              class="small-button-link"
+              ><i class="fa-solid fa-arrow-down-to-bracket"></i>CV</a
+            >
+            <br /><br /><br />
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('summary')">
-                In a nutshell
+                In a Nutshell
               </p>
               <p class="tab-links" onclick="opentab('journey')">My Journey</p>
-              <p class="tab-links" onclick="opentab('skills')">Other skills</p>
-              <p class="tab-links" onclick="opentab('facts')">Fun facts</p>
+              <p class="tab-links" onclick="opentab('skills')">Other Skills</p>
+              <p class="tab-links" onclick="opentab('facts')">Fun Facts</p>
             </div>
 
             <!------ In a nutshell tab ------->
@@ -114,11 +164,12 @@
                 particularly when I can use it to solve problems and improve
                 processes, so after learning HTML and CSS, it didn't take me
                 long to realize that the world of Tech could deliver me a never
-                ending supply of this!<br /><br />Having now completed She Codes
-                Plus, an incredible initiative aiming to address the gender
-                imbalance in the industry, whilst completing concurrent studies
-                in data analytics, I'm eager to build innovative solutions and
-                solve complex programming problems as a software developer.
+                ending supply of this!<br /><br />
+                Having now completed She Codes Plus, an incredible initiative
+                aiming to address the gender imbalance in the industry, whilst
+                completing concurrent studies in data analytics, I'm eager to
+                build innovative solutions and solve complex programming
+                problems as a software developer.
               </p>
             </div>
 
@@ -262,6 +313,7 @@
                 </div>
               </div>
             </div>
+
             <!---- My skills Tab ------->
             <div class="tab-contents" id="skills">
               <p>
@@ -291,19 +343,16 @@
                   (Portuguese & Spanish ➡ English)
                 </li>
               </ul>
-              <br />
-              <br />
-              <a href="images/karenlopezcv.pdf"
-                >Download my CV for more details</a
-              >
             </div>
 
             <!------ Fun facts ------->
             <div class="tab-contents" id="facts">
               <ul>
                 <li>
-                  <span></span><br />I would like to clarify first and foremost,
-                  that I'm a 'good Karen', I promise 😇
+                  <span
+                    >I would like to clarify first and foremost, that I'm a
+                    'good Karen', I promise 😇</span
+                  ><br />
                 </li>
                 <li>
                   <span>🧩 Kicking back with a good puzzle or board game</span
@@ -311,7 +360,7 @@
                 </li>
                 <li>
                   <span>Lifting heavy things 🏋️‍♀️</span><br />
-                  🥔 Carbs... Who am I kidding, just food in general
+                  🥔 Carbs... Who am I kidding, just food in general!
                 </li>
               </ul>
             </div>
