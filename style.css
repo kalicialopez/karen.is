@@ -536,10 +536,12 @@ blink {
 }
 
 .small-button-link {
-  fill: var(--purple);
+  background-color: var(--purple);
   transition: all 0.4s ease-out;
-  border-radius: 5px;
+  border-radius: 20px;
+  padding: 5px 15px;
   border: #8280ff;
+  text-decoration: none;
 }
 
 /* tabs */
@@ -547,6 +549,8 @@ blink {
   display: flex;
   justify-content: space-between;
   margin: 20px 0 40px;
+  font-weight: 900;
+  font-size: 1.5em;
 }
 
 .tab-links {
@@ -564,13 +568,13 @@ blink {
   content: "";
   width: 0;
   height: 3px;
-  background: var(--purple);
+  background: var(--pink);
   position: absolute;
   left: 0;
   bottom: -8px;
   transition: 0.5s;
   font-weight: 900;
-  color: var(--purple);
+  color: var(--pink);
   /* text-decoration: none; */
 }
 
@@ -584,24 +588,28 @@ blink {
   border-radius: 15px;
   box-shadow: inset -5px -5px 9px rgba(168, 178, 209, 0.45),
     inset 5px 5px 9px rgba(130, 128, 255, 0.3);
+  display: none;
 }
 
+/* user agent style sheet is overriding my custom bullet with default disc style. Using font icons as a temporary workaround. */
+ul {
+  /* list-style-type: none; */
+  list-style-image: url("custom-bullet.svg");
+}
 .tab-contents ul {
   padding-left: 0;
+  list-style-image: url("custom-bullet.svg");
 }
 
 .tab-contents ul li {
-  list-style: none;
   margin: 10px 0;
+  color: var(--light-lilac);
+  list-style-image: url("custom-bullet.svg");
 }
 
-.tab-contents ul li span {
-  color: var(--blue);
-}
-
-.tab-contents {
-  display: none;
-}
+/* .tab-contents {
+    display: none;
+} */
 
 .tab-contents.active-tab {
   display: block;
@@ -628,6 +636,7 @@ blink {
   } */
 
 /* My Journey tab */
+
 /* Timeline */
 .timeline-container {
   /* min-height: 100vh; */
