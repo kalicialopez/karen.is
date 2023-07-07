@@ -17,17 +17,38 @@
     <link rel="icon" type="image/png" href="images/favicon.ico.png" />
   </head>
   <body>
+    
+    
     <!--------- nav---------- -->
     <div class="nav-container">
       <nav>
-        <a href="index.html">
+        <a href="#home">
           <img src="images/logo.png" class="logo" alt="logo" />
         </a>
-        <ul>
-          <li><a href="about.html">.about()</a></li>
-          <li><a href="projects.html">.projects()</a></li>
-          <li><a href="contact.html">.contact()</a></li>
+        
+    <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#about">.about()</a>
+        </li>
+          <li class="nav-item">
+            <a href="#portfolio">.projects()</a>
+        </li>
+          <li class="nav-item">
+            <a href="#contact">.contact()</a>
+        </li>
         </ul>
+
+        <!-- Close button -->
+        <button class="nav-close" id="nav-close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Toggle button -->
+        <button class="nav-toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
       </nav>
     </div>
 
@@ -51,18 +72,19 @@
             <a href="projects.html" class="hero-button button-projects"
               >View my projects</a
             >
-            <a id="contact.html" class="hero-button button-contact"
-              >Get in touch</a
+            <a href="images/karenlopezcv.pdf" title="Karen's resume" target="_blank" class="hero-button button-contact"
+              >Download résumé</a
             >
           </div>
         </div>
+
+
 
         <!-- avatar -->
         <img src="images/avatar.png" id="avatar" alt="karen avatar" />
       </div>
     </div>
-    <!-- </div> -->
-    <!-- </div> -->
+
 
     <!---------- Tech Stack Section------------>
     <div id="tech-stack">
@@ -72,27 +94,27 @@
         <div class="tech-stack-container">
           <div class="icon html5">
             <div class="tooltip">HTML5</div>
-            <span><i class="fa-brands fa-html5 favicon"></i></span>
+            <span><i class="skills-icon fa-brands fa-html5 favicon"></i></span>
           </div>
 
           <div class="icon css3">
             <div class="tooltip">CSS3</div>
-            <span><i class="fa-brands fa-css3-alt favicon"></i></span>
+            <span><i class="skills-icon fa-brands fa-css3-alt favicon"></i></span>
           </div>
 
           <div class="icon javascript">
             <div class="tooltip">JavaScript</div>
-            <span><i class="fa-brands fa-square-js favicon"></i></span>
+            <span><i class="skills-icon fa-brands fa-square-js favicon"></i></span>
           </div>
 
           <div class="icon python">
             <div class="tooltip">Python</div>
-            <span><i class="fa-brands fa-python favicon"></i></span>
+            <span><i class="skills-icon fa-brands fa-python favicon"></i></span>
           </div>
 
           <div class="icon react">
             <div class="tooltip">React</div>
-            <span><i class="fa-brands fa-react favicon"></i></span>
+            <span><i class="skills-icon fa-brands fa-react favicon"></i></span>
           </div>
 
           <!-- <div class="icon django">
@@ -102,22 +124,22 @@
 
           <div class="icon django">
             <div class="tooltip">Django</div>
-            <span class="icon-django favicon"></span>
+            <span class="skills-icon icon-django favicon"></span>
           </div>
 
           <div class="icon docker">
             <div class="tooltip">Docker</div>
-            <span><i class="fa-brands fa-docker favicon"></i></span>
+            <span><i class="skills-icon fa-brands fa-docker favicon"></i></span>
           </div>
 
           <div class="icon r">
             <div class="tooltip">R</div>
-            <span><i class="fa-solid fa-r favicon"></i></span>
+            <span><i class="skills-icon fa-solid fa-r favicon"></i></span>
           </div>
 
           <div class="icon sql">
             <div class="tooltip">SQL</div>
-            <span><i class="fa-solid fa-database favicon"></i></span>
+            <span><i class="skills-icon fa-solid fa-database favicon"></i></span>
           </div>
         </div>
       </div>
@@ -459,7 +481,7 @@
               ></a>
             </div>
           </div>
-          <!-- <div class="project">
+          <div class="project">
             <img src="images/project-card-2.png" />
             <div class="layer">
               <div class="project-card-text">
@@ -476,7 +498,7 @@
                 ><i class="fa-solid fa-up-right-from-square"></i
               ></a>
             </div>
-          </div> -->
+          </div>
           <div class="project">
             <img src="images/project-card-3.png" />
             <div class="layer">
@@ -570,7 +592,7 @@
                   <label for="message"><span>Your message!</span></label>
                 </div>
                 <div class="form-item">
-                  <button type="submit" class="button-link button-2">SUBMIT</button>
+                  <button type="submit" class="button-link">Submit</button>
                 </div>
               </form>
             </div>
@@ -579,41 +601,86 @@
             <div orientation="left" class="contact-side-bar">
               <ul class="contact-icon-list">
                 <li>
-                  <a
-                    href="https://github.com/kalicialopez"
-                    title="Github"
-                    target="_blank">
-                    <i class="fab fa-github mb-3"></i
-                  ></a>
+                    <div class="icon github">
+                        <div class="tooltip">Github</div>
+                            <a
+                                href="https://github.com/kalicialopez"
+                                title="Github"
+                                target="_blank"
+                                rel="noreferrer">
+                                <span>
+                                    <i class="contact-icons fab fa-github mb-3">
+                                    </i>
+                                </span>
+                            </a>
+                    </div>
                 </li>
+
                 <li>
-                  <a
-                    href="https://stackoverflow.com/users/19818141/kalopez"
-                    title="Stackoverflow"
-                    target="_blank"
-                    rel="noreferrer">
-                    <i class="fa-brands fa-stack-overflow"></i
-                  ></a>
-                </li>
+                    <div class="icon linkedin">
+                        <div class="tooltip">Linkedin</div>
+                            <a
+                                href="https://www.linkedin.com/in/kalicialopez/"
+                                title="Linkedin"
+                                target="_blank"
+                                rel="noreferrer">
+                                    <span>
+                                        <i class="contact-icons fa-brands fa-linkedin">
+                                        </i>
+                                    </span>
+                            </a>
+                    </div>
+                  </li>
+
                 <li>
-                  <a
-                    href="https://www.instagram.com/kalicialopez/"
-                    title="Instagram"
-                    target="_blank"
-                    rel="noreferrer">
-                    <i class="fa-brands fa-instagram"></i
-                  ></a>
+                    <div class="icon stackoverflow">
+                        <div class="tooltip">Stackoverflow</div>
+                            <a
+                                href="https://stackoverflow.com/users/19818141/kalopez"
+                                title="Stackoverflow"
+                                target="_blank"
+                                rel="noreferrer">
+                                    <span>
+                                        <i class="contact-icons fa-brands fa-stack-overflow">
+                                        </i>
+                                    </span>
+                            </a>
+                    </div>
                 </li>
+
                 <li>
-                  <a
-                    href="https://www.linkedin.com/in/kalicialopez/"
-                    title="Linkedin"
-                    target="_blank"
-                    rel="noreferrer">
-                    <i class="fa-brands fa-linkedin"></i
-                  ></a>
+                    <div class="icon instagram">
+                        <div class="tooltip">Instagram</div>               
+                            <a
+                                href="https://www.instagram.com/kalicialopez/"
+                                title="Instagram"
+                                target="_blank"
+                                rel="noreferrer">
+                                    <span>
+                                        <i class="contact-icons fa-brands fa-instagram">
+                                        </i>
+                                    </span>
+                            </a>
+                        </div>
                 </li>
+
+                <li>
+                    <div class="icon facebook">
+                        <div class="tooltip">Facebook</div>
+                            <a
+                                href="https://www.facebook.com/kalicialopez/"
+                                title="Facebook"
+                                target="_blank"
+                                rel="noreferrer">
+                                    <span>
+                                        <i class="contact-icons fa-brands fa-square-facebook">
+                                        </i>
+                                    </span>
+                            </a>
+                    </div>
+                  </li>
               </ul>
+
             </div>
           </div>
         </div>
