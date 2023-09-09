@@ -4,702 +4,531 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== JAVASCRIPT ===============-->
     <script src="./app.js"></script>
+
+    <!--=============== FONT AWESOME ===============-->
     <script
       src="https://kit.fontawesome.com/ff859d6ad5.js"
       crossorigin="anonymous"></script>
+
+    <!--=============== CSS ===============-->
     <link rel="stylesheet" href="style.css" />
-    <title>Karen Lopez</title>
+
+    <!--=============== FAVICON ===============-->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="icon" type="image/png" href="images/favicon.ico.png" />
-  </head>
-  <body>
-    
-    
-    <!--------- nav---------- -->
-    <div class="nav-container">
-      <nav>
-        <a href="#home">
-          <img src="images/logo.png" class="logo" alt="logo" />
-        </a>
-        
-    <div class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#about">.about()</a>
-        </li>
-          <li class="nav-item">
-            <a href="#portfolio">.projects()</a>
-        </li>
-          <li class="nav-item">
-            <a href="#contact">.contact()</a>
-        </li>
-        </ul>
 
-        <!-- Close button -->
-        <button class="nav-close" id="nav-close">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
+    <title>Karen Alicia Lopez</title>
+  </head>
+
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> Patrick <span>Moz</span> </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
 
         <!-- Toggle button -->
-        <button class="nav-toggle" id="nav-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
       </nav>
-    </div>
+    </header>
 
-    <!--------- Hero section --------->
-    <div id="section-container">
-      <div class="hero-flex-wrapper">
-        <!-- hero-text-box -->
-        <div class="hero-text">
-          <h1 class="typing">
-            <span class="name">karen</span>.<span class="dot"></span>is( )<span
-              class="cursor"
-              ><blink>|</blink></span
-            >
-          </h1>
-          <br /><br /><br /><br />
-          <p class="hero-small-text name">Karen Lopez</p>
-          <p class="hero-small-text title">Fullstack Software Developer</p>
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <div class="home__data">
+              <h3 class="home__subtitle">Hello, <span>I'm</span></h3>
 
-          <!-- hero-buttons -->
-          <div class="hero-button-wrapper">
-            <a href="projects.html" class="hero-button button-projects"
-              >View my projects</a
-            >
-            <a href="images/karenlopezcv.pdf" title="Karen's resume" target="_blank" class="hero-button button-contact"
-              >Download résumé</a
-            >
-          </div>
-        </div>
+              <h1 class="home__title">Patrick Moz</h1>
 
+              <h3 class="home__education">Front-end Developer</h3>
 
+              <p class="home__description">
+                With knowledge in web development and design, I offer the best
+                projects resulting in quality work.
+              </p>
 
-        <!-- avatar -->
-        <img src="images/avatar.png" id="avatar" alt="karen avatar" />
-      </div>
-    </div>
+              <a href="#contact" class="button">Let's Talk</a>
+            </div>
 
-
-    <!---------- Tech Stack Section------------>
-    <div id="tech-stack">
-      <div class="section-container">
-        <h2>.techStack()</h2>
-
-        <div class="tech-stack-container">
-          <div class="icon html5">
-            <div class="tooltip">HTML5</div>
-            <span><i class="skills-icon fa-brands fa-html5 favicon"></i></span>
-          </div>
-
-          <div class="icon css3">
-            <div class="tooltip">CSS3</div>
-            <span><i class="skills-icon fa-brands fa-css3-alt favicon"></i></span>
-          </div>
-
-          <div class="icon javascript">
-            <div class="tooltip">JavaScript</div>
-            <span><i class="skills-icon fa-brands fa-square-js favicon"></i></span>
-          </div>
-
-          <div class="icon python">
-            <div class="tooltip">Python</div>
-            <span><i class="skills-icon fa-brands fa-python favicon"></i></span>
-          </div>
-
-          <div class="icon react">
-            <div class="tooltip">React</div>
-            <span><i class="skills-icon fa-brands fa-react favicon"></i></span>
-          </div>
-
-          <!-- <div class="icon django">
-            <div class="tooltip">Django</div>
-            <span><i class="fa-solid fa-d favicon"></i></span>
-          </div> -->
-
-          <div class="icon django">
-            <div class="tooltip">Django</div>
-            <span class="skills-icon icon-django favicon"></span>
-          </div>
-
-          <div class="icon docker">
-            <div class="tooltip">Docker</div>
-            <span><i class="skills-icon fa-brands fa-docker favicon"></i></span>
-          </div>
-
-          <div class="icon r">
-            <div class="tooltip">R</div>
-            <span><i class="skills-icon fa-solid fa-r favicon"></i></span>
-          </div>
-
-          <div class="icon sql">
-            <div class="tooltip">SQL</div>
-            <span><i class="skills-icon fa-solid fa-database favicon"></i></span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!---------- About Section ------------>
-    <div id="about">
-      <div class="section-container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="images/karen2.png" alt="Karen" />
-          </div>
-          <div class="about-col-2">
-            <h2>.about()</h2>
-            <br />
-            <p>
-              Hello and welcome to my corner of the web!<br />Please click the
-              tabs below to get to know me a little better.
-            </p>
-            <br />
-            <p>
-              Download my
+            <div class="home__social">
               <a
-                href="images/karenlopezcv.pdf"
-                title="Karen's CV"
+                href="https://github.com/"
                 target="_blank"
-                class="small-button-link"
-                ><i class="fa-solid fa-download"></i> CV
+                class="home__social-link">
+                <i class="ri-github-fill"></i>
               </a>
+
+              <a
+                href="https://dribbble.com/"
+                target="_blank"
+                class="home__social-link">
+                <i class="ri-dribbble-line"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="home__social-link">
+                <i class="ri-linkedin-box-line"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="home__image">
+            <svg
+              class="home__blob"
+              viewBox="0 0 550 591"
+              xmlns="http://www.w3.org/2000/svg">
+              <mask id="maskBlob" mask-type="alpha">
+                <path
+                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                      170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                      447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                      587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                      438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
+              </mask>
+              <g mask="url(#maskBlob)">
+                <path
+                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                      170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
+                      447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
+                      587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
+                      438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z" />
+
+                <rect x="37" width="476" height="630" fill="url(#pattern0)" />
+              </g>
+
+              <rect x="37" width="476" height="300" fill="url(#pattern1)" />
+
+              <defs>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1">
+                  <use
+                    href="#imageBlob"
+                    transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+                </pattern>
+
+                <pattern
+                  id="pattern1"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1">
+                  <use
+                    href="#imageBlob"
+                    transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
+                </pattern>
+
+                <!-- Insert your profile (recommended size: 640 x 940) -->
+                <image
+                  class="home__img"
+                  id="imageBlob"
+                  width="640"
+                  height="925"
+                  href="assets/img/perfil.png" />
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h3 class="section__subtitle">My <span>Intro</span></h3>
+
+            <h2 class="section__title">About Me</h2>
+
+            <p class="about__description">
+              Frontend developer, I create web pages with UI / UX user
+              interface, I have years of experience and many clients are happy
+              with the projects carried out.
             </p>
-            <br />
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('summary')">
-                In a Nutshell
-              </p>
-              <p class="tab-links" onclick="opentab('journey')">My Journey</p>
-              <p class="tab-links" onclick="opentab('skills')">Other Skills</p>
-              <p class="tab-links" onclick="opentab('facts')">Fun Facts</p>
-            </div>
 
-            <!------ In a nutshell tab ------->
-            <div class="tab-contents active-tab" id="summary">
-              <p>
-                I had my first fateful encounter with code two years ago as a
-                freelance Course Strategist helping clients monetize their
-                knowledge online. I love acquiring and applying knowledge,
-                particularly when I can use it to solve problems and improve
-                processes, so after learning HTML and CSS, it didn't take me
-                long to realize that the world of Tech could deliver me a never
-                ending supply of this!<br /><br />
-                Having now completed She Codes Plus, an incredible initiative
-                aiming to address the gender imbalance in the industry, whilst
-                completing concurrent studies in data analytics, I'm eager to
-                build innovative solutions and solve complex programming
-                problems as a software developer.
-              </p>
-            </div>
+            <a href="#contact" class="button">Contact Me</a>
+          </div>
 
-            <!------ My Journey Timeline tab ------->
-            <div class="tab-contents" id="journey">
-              <div class="timeline-container">
-                <div class="timeline">
-                  <ul>
-                    <li>
-                      <div class="timeline-content">
-                        <h3 class="date">Dec 2012</h3>
-                        <h1>Undergraduate studies</h1>
-                        <p>
-                          I've always been curious, so chose to study a Bachelor
-                          of Science (Human Biology and Applied Analytical
-                          Chemistry), graduating in 2012.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="timeline-content">
-                        <h3 class="date">Dec 2013</h3>
-                        <h1>Research and sessional academic teaching</h1>
-                        <p>
-                          I particularly enjoyed organic chemistry, and
-                          completed my honors research project in geochemistry,
-                          teaching undergraduate organic chemistry labs and
-                          tutorials while doing so.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="timeline-content">
-                        <h3 class="date">June 2015</h3>
-                        <h1>Postgraduate qualifications</h1>
-                        <p>
-                          My enjoyable teaching experience at Curtin University
-                          lead me to pursue a Postgraduate Diploma in Education
-                          (Science).
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="timeline-content">
-                        <h3 class="date">July 2015</h3>
-                        <h1>Science teaching</h1>
-                        <p>
-                          I began my career as a science educator with the WA
-                          Department of Education.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="timeline-content">
-                        <h3 class="date">Feb 2021</h3>
-                        <h1>Teaching and launching my own business</h1>
-                        <p>
-                          While teaching fulltime, I used the skills that made
-                          me an effective educator, to start my online business
-                          as a course strategist where I successfully managed
-                          and launched multiple courses.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="timeline-content">
-                        <h3 class="date">March 2021</h3>
-                        <h1>My first code snippets</h1>
-                        <p>
-                          A strong customer-focused approach and desire to
-                          exceed expectations saw me regularly lean into
-                          challenges that required learning new skills. One of
-                          these skills was coding, where I started teaching
-                          myself HTML and CSS.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="timeline-content">
-                        <h3 class="date">Feb 2022</h3>
-                        <h1>Skills focused</h1>
-                        <p>
-                          Officially on leave from my fulltime teaching
-                          position, I decided to focus on my business and
-                          develop my new skills, particularly my front-end
-                          development skills. I began teaching myself
-                          JavaScript.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="timeline-content">
-                        <h3 class="date">May 2022</h3>
-                        <h1>SheCodes.io</h1>
-                        <p>
-                          I enrolled in an online course where I strengthened my
-                          front-end development skills.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="timeline-content">
-                        <h3 class="date">Sep 2022</h3>
-                        <h1>She Codes AUS</h1>
-                        <p>
-                          I gained a place in She Codes Plus, a competitive,
-                          well regarded, project-based program where I produced
-                          five unique projects over six months.<a
-                            href="projects.html"
-                            >View my projects here.</a
-                          >
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="timeline-content">
-                        <h3 class="date">Dec 2022</h3>
-                        <h1>Data Analytics Certification</h1>
-                        <p>
-                          With data being a key driver in my professional
-                          decision-making in my latest roles, not to mention its
-                          strong relevance to back-end development, I began
-                          formally studying data analytics. I have learnt R and
-                          SQL and visualisation tools such as Power BI and
-                          Tableau.
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="timeline-content">
-                        <h3 class="date">Apr 2023</h3>
-                        <h1>Completion of She Codes Plus</h1>
-                        <p>
-                          Having now completed the She Codes Plus program, I
-                          would like to further develop my skills in a fullstack
-                          software development role.
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <div class="about__image">
+            <svg
+              class="about__blob"
+              viewBox="0 0 550 592"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <mask id="maskBorder" mask-type="alpha">
+                <path
+                  d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                      171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
+                      448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
+                      270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
+                      439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z"
+                  fill="black" />
+              </mask>
+              <g mask="url(#maskBorder)">
+                <rect x="37" width="476" height="630" fill="url(#pattern2)" />
 
-            <!---- My skills Tab ------->
-            <div class="tab-contents" id="skills">
-              <p>
-                When it comes to professional development, I view all hard
-                skills as learnable through consistent practice and focused
-                effort. Keeping this personal philosophy at the forefront of
-                every new professional experience and learning challenge, is
-                what has lead me to where I am today.
-              </p>
-              <br />
-              <p>
-                I've previously worked in a variety of industries, including the
-                Education and Healthcare sector, and bring with me a unique set
-                of transferable skills.
-              </p>
+                <path
+                  d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                      192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                      580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                      40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                      175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z"
+                  stroke="black"
+                  stroke-width="10" />
+              </g>
 
-              <!-- <ul>
-                <li>
-                  <span>Project management</span>
-                  <br />Leadership and mentorship
-                </li>
-                <li>
-                  <span>Communications and marketing</span><br />
-                  Data-driven decision making
-                </li>
-                <li>
-                  <span>Copywriting</span><br />Document translation
-                  (Portuguese & Spanish ➡ English)
-                </li>
-              </ul> -->
+              <rect x="37" width="476" height="300" fill="url(#pattern3)" />
 
+              <defs>
+                <pattern
+                  id="pattern2"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1">
+                  <use
+                    href="#imageBorder"
+                    transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)" />
+                </pattern>
 
-              <ul class="fa-ul">
-                <li>
-                  <span class="fa-li"
-                    ><i class="fa-solid fa-lightbulb"></i></span
-                  >Project management
-                </li>
-                <li>
-                  <span class="fa-li"
-                    ><i class="fa-solid fa-lightbulb"></i></span
-                  >Leadership and mentorship
-                </li>
-                <li>
-                  <span class="fa-li"
-                    ><i class="fa-solid fa-lightbulb"></i></i></span
-                  >Communications and marketing
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fa-solid fa-lightbulb"></i></span
-                  >Data driven decision making
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fa-solid fa-lightbulb"></i></span
-                    >Copywriting
-                  </li>
-                                 <li>
-                    <span class="fa-li"><i class="fa-solid fa-lightbulb"></i></span
-                    >Copywriting
-                  </li>
-                  <li>
-                    <span class="fa-li"><i class="fa-solid fa-lightbulb"></i></span
-                    >Document translation (Portuguese & Spanish ➡ English)
-                  </li>
-              </ul>
-            </div>
+                <pattern
+                  id="pattern3"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1">
+                  <use
+                    href="#imageBorder"
+                    transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)" />
+                </pattern>
 
-            <!------ Fun facts ------->
-            <div class="tab-contents" id="facts">
-              <!-- <ul>
-                <li>
-                  <span
-                    >I would like to clarify first and foremost, that I'm a
-                    'good Karen', I promise 😇</span
-                  ><br />
-                </li>
-                <li>
-                  <span>🧩 Kicking back with a good puzzle or board game</span
-                  ><br />Coffee ☕
-                </li>
-                <li>
-                  <span>Lifting heavy things 🏋️‍♀️</span><br />
-                  🥔 Carbs... Who am I kidding, just food in general!
-                </li>
-              </ul> -->
-              
-              <ul class="fa-ul">
-                <li>
-                  <span class="fa-li"
-                    ><i class="fa-solid fa-lightbulb"></i></span
-                  >I would like to clarify first and foremost, that I'm a
-                  'good Karen', I promise 😇
-                </li>
-                <li>
-                  <span class="fa-li"
-                    ><i class="fa-solid fa-lightbulb"></i></span
-                  >🧩 Kicking back with a good puzzle or board game
-                </li>
-                <li>
-                  <span class="fa-li"
-                    ><i class="fa-solid fa-lightbulb"></i></i></span
-                  >Coffee ☕
-                </li>
-                <li>
-                  <span class="fa-li"><i class="fa-solid fa-lightbulb"></i></span
-                  >Lifting heavy things 🏋️‍♀️
-                </li>
-                <li>
-                    <span class="fa-li"><i class="fa-solid fa-lightbulb"></i></span
-                    >🥔 Carbs... Who am I kidding, just food in general!
-                  </li>
-              </ul>
-            </div>
+                <!-- Insert your profile (recommended size: 640 x 940) -->
+                <image
+                  class="about__img"
+                  id="imageBorder"
+                  width="640"
+                  height="940"
+                  href="assets/img/perfil.png" />
+              </defs>
+            </svg>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <!---------- My Projects Section------------>
-    <div id="portfolio">
-      <div class="section-container">
-        <h2>.myProjects()</h2>
-        <!-- </div> -->
-        <div class="projects-container">
-          <div class="project">
-            <img src="images/project-card-1.png" alt="buybuddy-app" />
-            <div class="layer">
-              <div class="project-card-text">
-                <h3>Buybuddy</h3>
-                <p>
-                  The comparison shopping list app for the indecisive, yet
-                  financially savvy consumer.
-                </p>
-              </div>
-              <a
-                href="https://buy-buddy.netlify.app/"
-                target="_blank"
-                title="buybuddy app"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="project">
-            <img src="images/project-card-2.png" />
-            <div class="layer">
-              <div class="project-card-text">
-                <h3>She Codes News Xmas Ed.</h3>
-                <p>
-                  The most mouthwatering edition of She Codes News there ever
-                  was! Prepare to salivate!
-                </p>
-              </div>
-              <a
-                href="http://127.0.0.1:8000/news/"
-                target="_blank"
-                title="She Codes News"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-          <div class="project">
-            <img src="images/project-card-3.png" />
-            <div class="layer">
-              <div class="project-card-text">
-                <h3>EducAid</h3>
-                <p>
-                  A non-for-profit crowdfunding platform aimed at making quality
-                  courses/learning more accessible to those in need.
-                </p>
-              </div>
-              <a
-                href="https://educaid.netlify.app/"
-                target="_blank"
-                title="EducAid"
-                ><i class="fa-solid fa-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a href="projects.html" class="button-link">SEE MORE</a>
-    </div>
+      <!--==================== SKILLS ====================-->
+      <section class="skills section">
+        <div class="skills__container container grid">
+          <div class="skills__data">
+            <h3 class="section__subtitle">Favorite <span>Skills</span></h3>
 
-    <!------------------- Contact Section------------------------>
-    <div id="contact">
-      <div class="section-container">
-        <div class="row">
-          <div class="contact-left">
-            <h2>.contact()</h2>
-            <p>
-              <i class="fa-solid fa-paper-plane"></i>k.alicia.lopez@gmail.com
+            <h2 class="section__title">My Skills</h2>
+
+            <p class="skills__description">
+              See fully what skills I have and perform, to develop the projects
+              for you.
             </p>
-            <p><i class="fa-solid fa-square-phone"></i>+61 421 648 140</p>
-            <!-- <a
-              href="images/karenlopezcv.pdf"
-              download
-              class="button-link button-2"
-              >Download CV</a
-            > -->
-            <!-- </div> -->
+
+            <a href="#projects" class="button">See Projects</a>
           </div>
-          <div class="contact-right">
-            <!-- My contact form -->
-            <!-- <form action="https://formspree.io/f/xdojdvro" method="post">
-            <div class="form-item">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
-            </div>
-            <div class="form-item">
-              <label for="mail">Email</label>
-              <input type="email" id="mail" name="email" />
-            </div>
-            <div class="form-item">
-              <label for="message">Message</label>
-              <textarea id="message" name="message">
-        Hi Karen!
-                  </textarea
-              >
-            </div>
-            <div class="form-item">
-              <button class="contact-send" type="submit">Send!</button>
-            </div>
-          </form> -->
-            <!-- </div> -->
-            <!-- </div> -->
 
-            <!-- Nirali's Fucking Awesome Contact Form -->
-            <div class="form-wrapper">
-              <form action="https://formspree.io/f/xdojdvro" method="POST">
-                <div class="form-item">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required="required" />
-                  <label for="name"><span>Name</span></label>
-                </div>
-                <div class="form-item">
-                  <input
-                    type="email"
-                    id="mail"
-                    name="mail"
-                    required="required" />
-                  <label for="mail"><span>Email</span></label>
-                </div>
-                <div class="form-item">
-                  <textarea
-                    id="message"
-                    name="message"
-                    required="required"></textarea>
-                  <label for="message"><span>Your message!</span></label>
-                </div>
-                <div class="form-item">
-                  <button type="submit" class="button-link">Submit</button>
-                </div>
-              </form>
-            </div>
+          <div class="skills__content">
+            <ol class="skills__group">
+              <li class="skills__item">HTML & CSS</li>
+              <li class="skills__item">JavaScript</li>
+              <li class="skills__item">Bootstrap</li>
+              <li class="skills__item">React</li>
+            </ol>
 
-            <!-- side contact bar -->
-            <div orientation="left" class="contact-side-bar">
-              <ul class="contact-icon-list">
-                <li>
-                    <div class="icon github">
-                        <div class="tooltip">Github</div>
-                            <a
-                                href="https://github.com/kalicialopez"
-                                title="Github"
-                                target="_blank"
-                                rel="noreferrer">
-                                <span>
-                                    <i class="contact-icons fab fa-github mb-3">
-                                    </i>
-                                </span>
-                            </a>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="icon linkedin">
-                        <div class="tooltip">Linkedin</div>
-                            <a
-                                href="https://www.linkedin.com/in/kalicialopez/"
-                                title="Linkedin"
-                                target="_blank"
-                                rel="noreferrer">
-                                    <span>
-                                        <i class="contact-icons fa-brands fa-linkedin">
-                                        </i>
-                                    </span>
-                            </a>
-                    </div>
-                  </li>
-
-                <li>
-                    <div class="icon stackoverflow">
-                        <div class="tooltip">Stackoverflow</div>
-                            <a
-                                href="https://stackoverflow.com/users/19818141/kalopez"
-                                title="Stackoverflow"
-                                target="_blank"
-                                rel="noreferrer">
-                                    <span>
-                                        <i class="contact-icons fa-brands fa-stack-overflow">
-                                        </i>
-                                    </span>
-                            </a>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="icon instagram">
-                        <div class="tooltip">Instagram</div>               
-                            <a
-                                href="https://www.instagram.com/kalicialopez/"
-                                title="Instagram"
-                                target="_blank"
-                                rel="noreferrer">
-                                    <span>
-                                        <i class="contact-icons fa-brands fa-instagram">
-                                        </i>
-                                    </span>
-                            </a>
-                        </div>
-                </li>
-
-                <li>
-                    <div class="icon facebook">
-                        <div class="tooltip">Facebook</div>
-                            <a
-                                href="https://www.facebook.com/kalicialopez/"
-                                title="Facebook"
-                                target="_blank"
-                                rel="noreferrer">
-                                    <span>
-                                        <i class="contact-icons fa-brands fa-square-facebook">
-                                        </i>
-                                    </span>
-                            </a>
-                    </div>
-                  </li>
-              </ul>
-
-            </div>
+            <ol class="skills__group" start="5">
+              <li class="skills__item">Git & GitHub</li>
+              <li class="skills__item">Figma</li>
+              <li class="skills__item">Sketch</li>
+            </ol>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- side bar email -->
-      <!-- <div
-      orientation="right"
-      class="side-bar-email">
-      <a href="mailto:k.alicia.lopez@gmail.com" aria-label="Email"
-        ><i class="fa-solid fa-paper-plane"></i>k.alicia.lopez@gmail.com</a
-      > -->
-    </div>
-    <div id="footer">
-      <p>
-        Copyright <i class="fa-solid fa-copyright"></i> Karen Lopez 2023 <br />
-        Made with <i class="fa-solid fa-heart"></i>, Coffee and
-        <i class="fa-solid fa-cookie-bite"></i>.
-      </p>
-    </div>
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h3 class="section__subtitle">My <span>Services</span></h3>
+
+        <h2 class="section__title">What I Do</h2>
+
+        <div class="services__container container grid">
+          <article class="services__card">
+            <i class="ri-layout-3-line services__icon"></i>
+
+            <h2 class="services__title">Web Developer</h2>
+
+            <p class="services__description">
+              Development of custom web pages. Using current technologies and
+              libraries of the labor field.
+            </p>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-pantone-line services__icon"></i>
+
+            <h2 class="services__title">UI/UX Designer</h2>
+
+            <p class="services__description">
+              I offer design of web interfaces and mobile applications, design
+              made in figma, adobe xd and sketch.
+            </p>
+          </article>
+
+          <article class="services__card">
+            <i class="ri-pen-nib-line services__icon"></i>
+
+            <h2 class="services__title">Graphic Design</h2>
+
+            <p class="services__description">
+              I make designs at the client's request, banner design, posters,
+              digital designs among others.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+        <h3 class="section__subtitle">My <span>Jobs</span></h3>
+
+        <h2 class="section__title">Recent Projects</h2>
+
+        <div class="projects__container container grid">
+          <article class="projects__card">
+            <img
+              src="assets/img/project-img-1.jpg"
+              alt="projects image"
+              class="projects__img" />
+
+            <div class="projects__modal">
+              <span class="projects__subtitle">Web</span>
+
+              <h2 class="projects__title">Modern website</h2>
+
+              <a href="#" class="projects__button">
+                View demo <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img
+              src="assets/img/project-img-2.jpg"
+              alt="projects image"
+              class="projects__img" />
+
+            <div class="projects__modal">
+              <span class="projects__subtitle">Web</span>
+
+              <h2 class="projects__title">Modern website</h2>
+
+              <a href="#" class="projects__button">
+                View demo <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img
+              src="assets/img/project-img-3.jpg"
+              alt="projects image"
+              class="projects__img" />
+
+            <div class="projects__modal">
+              <span class="projects__subtitle">Web</span>
+
+              <h2 class="projects__title">Modern website</h2>
+
+              <a href="#" class="projects__button">
+                View demo <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img
+              src="assets/img/project-img-4.jpg"
+              alt="projects image"
+              class="projects__img" />
+
+            <div class="projects__modal">
+              <span class="projects__subtitle">Web</span>
+
+              <h2 class="projects__title">Modern website</h2>
+
+              <a href="#" class="projects__button">
+                View demo <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img
+              src="assets/img/project-img-5.jpg"
+              alt="projects image"
+              class="projects__img" />
+
+            <div class="projects__modal">
+              <span class="projects__subtitle">Web</span>
+
+              <h2 class="projects__title">Modern website</h2>
+
+              <a href="#" class="projects__button">
+                View demo <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <img
+              src="assets/img/project-img-6.jpg"
+              alt="projects image"
+              class="projects__img" />
+
+            <div class="projects__modal">
+              <span class="projects__subtitle">Web</span>
+
+              <h2 class="projects__title">Modern website</h2>
+
+              <a href="#" class="projects__button">
+                View demo <i class="ri-external-link-line"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h3 class="section__subtitle">Get In <span>Touch</span></h3>
+
+        <h2 class="section__title">Contact Me</h2>
+
+        <div class="contact__container container grid">
+          <form action="" class="contact__form" id="contact-form">
+            <div class="contact__group">
+              <input
+                type="text"
+                name="user_name"
+                required
+                placeholder="Enter your name"
+                class="contact__input" />
+              <input
+                type="email"
+                name="user_email"
+                required
+                placeholder="Enter your email"
+                class="contact__input" />
+            </div>
+
+            <textarea
+              name="user_project"
+              required
+              placeholder="Enter your message"
+              class="contact__input"></textarea>
+
+            <p class="contact__message" id="contact-message"></p>
+
+            <button type="submit" class="button contact__button">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container grid">
+        <div>
+          <h1 class="footer__title">Patrick <span>Moz</span></h1>
+
+          <h2 class="footer__education">Front-end Developer</h2>
+        </div>
+
+        <div class="footer__social">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            class="footer__social-link">
+            <i class="ri-facebook-circle-line"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="footer__social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            class="footer__social-link">
+            <i class="ri-twitter-line"></i>
+          </a>
+        </div>
+
+        <span class="footer__copy">
+          &#169; Copyright Bedimcode. All rights reserved
+        </span>
+      </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
