@@ -401,7 +401,7 @@ blink {
 #project-4,
 #project-6 {
   padding: 60px;
-  margin: 80px;
+  margin: 60px;
   /* border: 1px solid #24363a; */
   /* border: 1px solid darkslategray; */
   background-color: var(--black);
@@ -949,7 +949,7 @@ ul {
 #contact,
 #project-3 {
   padding: 60px;
-  margin: 80px;
+  margin: 60px;
   color: var(--white);
   background-color: var(--medium-navy);
   border-radius: 22px;
@@ -1098,105 +1098,101 @@ form {
 
 /* ---------------------- footer ------------------------- */
 #footer {
-  width: 100%;
-  text-align: center;
-  padding: 25px 0;
-  background: var(--black);
-  font-weight: 300px;
-  margin-top: 20px;
-}
-
-i.fa-solid.fa-heart,
-.fa-cup-cookie-bite {
-  color: var(--neon);
-}
-i.fa-duotone.fa-mug-hot {
-  color: var(--neon);
-}
-/* ---------- fixed side bar -------------- */
-.contact-side-bar {
-  width: 40px;
-  position: fixed;
-  bottom: 0px;
-  left: 15px;
-  right: auto;
-  z-index: 10;
-  color: var(--white);
-}
-
-.contact-icon-list {
   display: flex;
   flex-direction: column;
-  -webkit-box-align: center;
-  align-items: center;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 25px;
+  background: var(--black);
+  font-weight: 300px;
+  margin: 20px;
 }
 
-.contact-icon-list::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 100px;
-  margin: 0px auto;
-  background-color: var(--light-slate);
+#footer .contact-bar {
+  padding: 10px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content:center;
+  align-content: center;
+  align-items: stretch;
+
 }
 
-.contact-side-bar .contact-icon-list .contact-icons {
-  font-size: 1.5em;
-  padding-bottom: 30px;
-  transition: ease-in-out 0.2s;
-}
-
-.contact-side-bar .contact-icon-list .contact-icons:hover {
-  color: var(--purple);
-  font-size: 1.7em;
-  /* margin-bottom: 2px; */
-}
-
-/* tooltip */
-.contact-icon-list .icon {
-  margin: 8px 15px;
+#footer .contact-bar .contact-icons {
+  padding: 0;
   cursor: pointer;
+  font-size: 1.8em;
   align-items: center;
   justify-content: center;
   display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 2;
+  flex-direction: row;
 }
 
-.contact-icon-list .icon .tooltip {
+#footer .contact-bar .contact-icons {
+  color: var(--medium-lilac);
+}
+
+#footer .contact-bar .icon a{
+  text-decoration: none;
+}
+
+#footer .contact-bar .icon:hover{
+  color: var(--neon);
+}
+
+#footer .contact-icons:hover {
+  transform: translateY(4px);
+  font-size: 2em;
+  font-weight: 600px;
+  color: var(--purple);
+  transition: 0.3s;
+}
+
+.footer-text {
+  width: 100%;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  color: var(--blue);
+}
+
+#footer .footer-text .fa-copyright {
+  color: var(--blue);
+}
+
+#footer .contact-bar .icon .tooltip {
   background: var(--medium-lilac);
-  color: var(--light-navy);
+  color: var(--light-navy); 
   font-size: 1em;
   padding: 4px 18px;
   border-radius: 10px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 0px;
-  left: 35px;
+  position: relative;
+  top: -15px;
   opacity: 0;
   pointer-events: none;
+  text-decoration: none;
 }
 
-.contact-icon-list .icon:hover .tooltip {
+#footer .icon:hover .tooltip {
   opacity: 1;
   pointer-events: auto;
+
 }
 
-.contact-icon-list .icon .tooltip:before {
+#footer .icon .tooltip:before {
   position: absolute;
   content: "";
   height: 15px;
   width: 15px;
   background: var(--medium-lilac);
-  margin-top: -3px;
-  bottom: 8px;
-  left: 1px;
+  bottom: -8px;
+  left: 50%;
   transform: translateX(-50%) rotate(45deg);
+
 }
+
+
 
 /* -------------------------------- PROJECT PAGE ---------------------------------- */
 
@@ -1208,3 +1204,6 @@ i.fa-duotone.fa-mug-hot {
 }
 
 /* ----------------- Media Queries ---------------------- */
+@media only screen and (max-width: 600px) {
+  left.contact-side-bar
+}
