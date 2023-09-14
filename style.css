@@ -124,6 +124,10 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+nav .fas {
+  display: none;
+}
+
 /* .navbar a:hover {
 
   transition: 0.5s ease;
@@ -517,7 +521,7 @@ blink {
 #about,
 #project-1 {
   padding: 60px;
-  margin: 80px;
+  margin: 60px;
   color: var(--white);
   background-color: var(--medium-navy);
   border-radius: 22px;
@@ -777,7 +781,7 @@ ul {
 #project-2,
 #project-5 {
   padding: 60px;
-  margin: 80px;
+  margin: 60px;
   background-color: var(--black);
   /* border: 1px solid darkslategray; */
   border-radius: 15px;
@@ -1113,10 +1117,9 @@ form {
   padding: 10px;
   display: inline-flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   align-content: center;
   align-items: stretch;
-
 }
 
 #footer .contact-bar .contact-icons {
@@ -1133,20 +1136,20 @@ form {
   color: var(--medium-lilac);
 }
 
-#footer .contact-bar .icon a{
+#footer .contact-bar .icon a {
   text-decoration: none;
 }
 
-#footer .contact-bar .icon:hover{
+#footer .contact-bar .icon:hover {
   color: var(--neon);
 }
 
 #footer .contact-icons:hover {
-  transform: translateY(4px);
+  transform: translateY(5px);
   font-size: 2em;
   font-weight: 600px;
   color: var(--purple);
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .footer-text {
@@ -1162,8 +1165,8 @@ form {
 
 #footer .contact-bar .icon .tooltip {
   background: var(--medium-lilac);
-  color: var(--light-navy); 
-  font-size: 1em;
+  color: var(--light-navy);
+  font-size: 0.8em;
   padding: 4px 18px;
   border-radius: 10px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -1177,7 +1180,6 @@ form {
 #footer .icon:hover .tooltip {
   opacity: 1;
   pointer-events: auto;
-
 }
 
 #footer .icon .tooltip:before {
@@ -1189,10 +1191,7 @@ form {
   bottom: -8px;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
-
 }
-
-
 
 /* -------------------------------- PROJECT PAGE ---------------------------------- */
 
@@ -1205,5 +1204,37 @@ form {
 
 /* ----------------- Media Queries ---------------------- */
 @media only screen and (max-width: 600px) {
-  left.contact-side-bar
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+
+  nav ul {
+    background: var(--blue);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .hero-flex-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+
 }

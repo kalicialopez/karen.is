@@ -25,30 +25,31 @@
         <a href="#home">
           <img src="images/logo.png" class="logo" alt="logo" />
         </a>
-        
-    <div class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#about">.about()</a>
-        </li>
-          <li class="nav-item">
-            <a href="#portfolio">.projects()</a>
-        </li>
-          <li class="nav-item">
-            <a href="#contact">.contact()</a>
-        </li>
-        </ul>
 
-        <!-- Close button -->
-        <button class="nav-close" id="nav-close">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
+        <div class="nav-menu" id="nav-menu">
+          <ul id="navlist">
+            <li class="nav-item">
+                <a href="#about">.about()</a>
+            </li>
+              <li class="nav-item">
+                <a href="#portfolio">.projects()</a>
+            </li>
+              <li class="nav-item">
+                <a href="#contact">.contact()</a>
+            </li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            <!-- Close button -->
+            <!-- <button class="nav-close" id="nav-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button> -->
 
-        <!-- Toggle button -->
-        <button class="nav-toggle" id="nav-toggle">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-    </div>
+            <!-- Toggle button -->
+            <!-- <button class="nav-toggle" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button> -->
+        </div>
       </nav>
     </div>
 
@@ -69,7 +70,7 @@
 
           <!-- hero-buttons -->
           <div class="hero-button-wrapper">
-            <a href="projects.html" class="hero-button button-projects"
+            <a href="#portfolio" class="hero-button button-projects"
               >View my projects</a
             >
             <a href="images/karenlopezcv.pdf" title="Karen's resume" target="_blank" class="hero-button button-contact"
@@ -151,8 +152,7 @@
             <h2>.about()</h2>
             <br />
             <p>
-              Hello and welcome to my corner of the web!<br />Please click the
-              tabs below to get to know me a little better.
+              Welcome to my corner of the web.<br />
             </p>
             <br />
             <p>
@@ -390,10 +390,6 @@
                     <span class="fa-li"><i class="fa-solid fa-lightbulb"></i></span
                     >Copywriting
                   </li>
-                                 <li>
-                    <span class="fa-li"><i class="fa-solid fa-lightbulb"></i></span
-                    >Copywriting
-                  </li>
                   <li>
                     <span class="fa-li"><i class="fa-solid fa-lightbulb"></i></span
                     >Document translation (Portuguese & Spanish ➡ English)
@@ -421,12 +417,12 @@
               </ul> -->
               
               <ul class="fa-ul">
-                <li>
+                <!-- <li>
                   <span class="fa-li"
                     ><i class="fa-solid fa-lightbulb"></i></span
                   >I would like to clarify first and foremost, that I'm a
                   'good Karen', I promise 😇
-                </li>
+                </li> -->
                 <li>
                   <span class="fa-li"
                     ><i class="fa-solid fa-lightbulb"></i></span
@@ -514,7 +510,7 @@
           </div>
         </div>
       </div>
-      <a href="projects.html" class="button-link">SEE MORE</a>
+      <!-- <a href="projects.html" class="button-link">SEE MORE</a> -->
     </div>
 
     <!------------------- Contact Section------------------------>
@@ -527,6 +523,8 @@
               <i class="fa-solid fa-paper-plane"></i>k.alicia.lopez@gmail.com
             </p>
             <p><i class="fa-solid fa-square-phone"></i>+61 421 648 140</p>
+          </br>
+        </br>
             <!-- <a
               href="images/karenlopezcv.pdf"
               download
